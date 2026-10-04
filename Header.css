@@ -1,0 +1,440 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+/* ================= HEADER ================= */
+
+header {
+    background-color: #333;
+    padding: 15px 50px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.Logo {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #00bcd4;
+}
+
+
+/* Hamburger */
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    min-height: 500px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background: linear-gradient(135deg, #00bcd4, #333);
+
+    color: white;
+    padding: 40px 20px;
+}
+
+.hero-content {
+    max-width: 700px;
+
+    animation: fadeIn 1.2s ease;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    display: inline-block;
+
+    background-color: white;
+    color: #333;
+
+    padding: 14px 30px;
+
+    border-radius: 5px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #333;
+    color: white;
+    transform: translateY(-3px);
+}
+
+
+/* ================= ABOUT ================= */
+
+.about {
+    padding: 80px 20px;
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+}
+
+.about h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    color: #666;
+    font-size: 18px;
+}
+
+
+/* ================= SERVICES ================= */
+
+.services {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+.services h2,
+.testimonials h2 {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background-color: white;
+
+    width: 300px;
+
+    padding: 30px 25px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    color: #666;
+}
+
+
+/* ================= TESTIMONIALS ================= */
+
+.testimonials {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.testimonial-card {
+    width: 300px;
+
+    padding: 30px;
+
+    background-color: white;
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+    transition: 0.3s;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-8px);
+}
+
+.quote {
+    font-size: 40px;
+    color: #00bcd4;
+}
+
+.testimonial-card p {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.testimonial-card h3 {
+    margin-bottom: 5px;
+}
+
+.testimonial-card span {
+    color: #888;
+    font-size: 14px;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background-color: #222;
+    color: white;
+}
+
+.footer-container {
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 60px 20px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 40px;
+
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    width: 300px;
+}
+
+.footer-section h3 {
+    margin-bottom: 20px;
+}
+
+.footer-section p {
+    color: #ccc;
+    margin-bottom: 8px;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.social-links a {
+    color: #ccc;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: #00bcd4;
+}
+
+.footer-bottom {
+    text-align: center;
+
+    padding: 20px;
+
+    border-top: 1px solid #444;
+
+    color: #aaa;
+}
+
+
+/* ================= ANIMATION ================= */
+
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 15px 25px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+
+        position: absolute;
+
+        top: 65px;
+        left: 0;
+
+        width: 100%;
+
+        background-color: #333;
+
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 0;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu li {
+        padding: 15px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .footer-container {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .social-links {
+        align-items: center;
+    }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 480px) {
+
+    header {
+        padding: 15px 20px;
+    }
+
+    .Logo {
+        font-size: 21px;
+    }
+
+    .hero {
+        min-height: 450px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .services h2,
+    .testimonials h2,
+    .about h2 {
+        font-size: 28px;
+    }
+
+    .service-card,
+    .testimonial-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .footer-section {
+        width: 100%;
+    }
+
+}
